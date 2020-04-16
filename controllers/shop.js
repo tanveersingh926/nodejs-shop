@@ -79,7 +79,7 @@ exports.postCart = (req, res, next) => {
       if (product) {
         console.log("product*************************", product);
 
-        const oldQuantity = product.cardItem.quantity;
+        const oldQuantity = product.cartItem.quantity;
         newQuantity = oldQuantity + 1;
         return product;
       }
